@@ -24,7 +24,7 @@ app.use(passport.initialize());
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: "*",
+    origin: "https://rentrover-frontend-mv9f.onrender.com",
     methods: ["GET", "POST"]
   }
 });
