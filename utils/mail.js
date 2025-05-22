@@ -22,7 +22,7 @@ const transporter = nodemailer.createTransport({
 const sendMail = async (options) => {
   try {
     const mailOptions = {
-      from: `"EZYCAR" <${process.env.EMAIL_USERNAME}>`,
+      from: `"RentRover" <${process.env.EMAIL_USERNAME}>`,
       to: options.to,
       subject: options.subject,
       html: options.html
@@ -116,7 +116,7 @@ const sendBidAcceptedEmail = async (data) => {
       </div>
       
       <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e0e0e0;">
-        <p>Thank you for using EZYCAR.</p>
+        <p>Thank you for using RentRover.</p>
         <div style="margin-top: 15px;">
           <a href="process.env.EMAIL_USERNAME" style="display: inline-block; background-color: #f5f5f5; color: #333; padding: 10px 20px; text-decoration: none; border-radius: 4px;">Contact Support</a>
         </div>
@@ -204,7 +204,7 @@ const sendBidRejectedEmail = async (data) => {
       
       <div style="margin-bottom: 20px; padding: 20px; border: 1px solid #e0e0e0; border-radius: 5px;">
         <h2 style="color: #333; margin-top: 0; margin-bottom: 15px; border-bottom: 1px solid #eee; padding-bottom: 10px;">What's Next?</h2>
-        <p>We understand this might be disappointing, but don't worry! There are many other great cars available on EZYCAR that might be perfect for your needs.</p>
+        <p>We understand this might be disappointing, but don't worry! There are many other great cars available on RentRover that might be perfect for your needs.</p>
         
         <div style="background-color: #f5f5f5; padding: 15px; border-radius: 5px; margin-top: 20px;">
           <h3 style="color: #1976D2; margin-top: 0;">Your Options:</h3>
@@ -218,7 +218,7 @@ const sendBidRejectedEmail = async (data) => {
       </div>
       
       <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e0e0e0;">
-        <p>Thank you for your interest in EZYCAR.</p>
+        <p>Thank you for your interest in RentRover.</p>
         <div style="margin-top: 15px;">
           <a href="http://ezycar.com/support" style="display: inline-block; background-color: #f5f5f5; color: #333; padding: 10px 20px; text-decoration: none; border-radius: 4px; margin-top: 10px;">Contact Support</a>
         </div>
@@ -297,7 +297,7 @@ const sendBidAddedEmail = async (data) => {
       </div>
       
       <div style="text-align: center; margin-top: 30px; padding-top: 20px; border-top: 1px solid #e0e0e0;">
-        <p>Thank you for using EZYCAR.</p>
+        <p>Thank you for using RentRover.</p>
         <div style="margin-top: 15px;">
           <a href="process.env.EMAIL_USERNAME" style="display: inline-block; background-color: #f5f5f5; color: #333; padding: 10px 20px; text-decoration: none; border-radius: 4px;">Contact Support</a>
         </div>
